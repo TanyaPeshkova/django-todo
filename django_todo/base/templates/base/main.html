@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Smooch&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1,p,h2,h3,a,table{
+            font-family: 'Montserrat', sans-serif;
+        }
+        input{
+            border-radius: 10% ;
+        }
+        .container{
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            background-color:burlywood;
+            border-radius: 15%;
+            padding: 5%;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}
+
+            {% endblock content %}
+        </div>
+    </body>
+</html>
