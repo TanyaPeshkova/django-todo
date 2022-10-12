@@ -3,6 +3,11 @@
 
 
 <h1>Задача: {{task}}</h1>
-<h2></h2>
-
+<h2>Описание: {{task.decription}}</h2>
+<h2>Дата создания: {{task.created}}</h2>
+{% if task.complete  %}
+<h2>Статус: Выполнено</h2>
+{{% else %}  
+<h2>Статус: В процессе</h2>
+{%  endif %}
 {% endblock content %}

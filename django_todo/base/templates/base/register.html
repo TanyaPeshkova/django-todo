@@ -1,12 +1,12 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
-<h1>Регисрация</h1>
+<h1>Регистрация</h1>
 
 <form method="post">
     {% csrf_token %}
     {{form.as_p}}
-    <input type="submit" value="Register"/>
+    <input type="submit" value="Зарегистрироваться"/>
 
 </form>
 
